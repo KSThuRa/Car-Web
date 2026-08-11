@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Browse Cars — AutoVista</title><link rel="stylesheet" href="assets/css/style.css"></head>
+<body>
+<header class="site-header"><a class="logo" href="index.html"><span>AV</span> AutoVista</a><nav class="nav"><a href="index.html">Home</a><a class="active" href="cars.html">Cars</a><a href="sell.html">Sell Your Car</a><a href="financing.html">Financing</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav><div class="header-actions"><button class="icon-btn" data-favorites>♡ <span class="badge">0</span></button><a class="btn btn-dark small" href="login.html">Sign In</a><button class="menu-btn" data-menu>☰</button></div></header>
+<main>
+<section class="page-hero"><span class="eyebrow">OUR INVENTORY</span><h1>Find your next car.</h1><p>Browse verified vehicles from trusted sellers.</p></section>
+<section class="inventory-layout">
+<aside class="filters"><div class="filter-title"><h3>Filter cars</h3><button data-clear-filters>Clear</button></div>
+<label>Search<input id="filterSearch" placeholder="Make, model..."></label>
+<label>Make<select id="filterMake"><option value="">All makes</option><option>Toyota</option><option>BMW</option><option>Mercedes-Benz</option><option>Honda</option><option>Tesla</option><option>Porsche</option></select></label>
+<label>Body type<select id="filterBody"><option value="">All types</option><option>SUV</option><option>Sedan</option><option>Coupe</option><option>Hatchback</option></select></label>
+<label>Max price<select id="filterPrice"><option value="">Any price</option><option value="25000">$25,000</option><option value="40000">$40,000</option><option value="60000">$60,000</option><option value="100000">$100,000</option></select></label>
+<label>Year from<select id="filterYear"><option value="">Any year</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021</option></select></label></aside>
+<section class="inventory"><div class="results-bar"><strong id="resultCount">0 cars</strong><select id="sortCars"><option value="featured">Featured</option><option value="price-low">Price: Low to high</option><option value="price-high">Price: High to low</option><option value="year-new">Newest first</option></select></div><div id="carList" class="car-grid"></div></section>
+</section></main>
+<footer class="footer compact"><div><a class="logo" href="index.html"><span>AV</span> AutoVista</a><p>Drive with confidence.</p></div><div class="copyright">© 2026 AutoVista</div></footer>
+<script src="assets/js/app.js"></script></body></html>
